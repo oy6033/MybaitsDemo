@@ -18,6 +18,5 @@ public class UserService {
         return userMapper.Count();
     }
 
-    public int Create() {return  userMapper.createNewTable("newtable");}
 
 }
