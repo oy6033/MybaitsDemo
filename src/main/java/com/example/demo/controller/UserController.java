@@ -25,6 +25,10 @@ public class UserController {
         return userService.Count();
     }
 
+    @RequestMapping("createTable")
+    public int CreateTable(){
+        return userService.Create();
+    }
 
 
 
