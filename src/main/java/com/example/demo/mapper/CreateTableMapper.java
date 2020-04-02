@@ -11,5 +11,4 @@ public interface CreateTableMapper {
 
     int createNewTable(@Param("tableName")String tableName);
 
-
 }

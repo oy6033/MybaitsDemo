@@ -10,9 +10,8 @@ public class UserService {
 
     @Autowired
     UserMapper userMapper;
-    public User Sel(String id){
-        return userMapper.Sel(id);
-    }
+
+    public User Sel(String id){ return userMapper.Sel(id); }
 
     public int Count(){
         return userMapper.Count();

@@ -10,7 +10,7 @@
 <!--</resultMap>-->
 
     <select id="Sel" resultType="com.example.demo.entity.User">
-            select * from user where userName = #{id}
+            select * from user where id = #{id}
     </select>
 
     <select id="Count" resultType="int">

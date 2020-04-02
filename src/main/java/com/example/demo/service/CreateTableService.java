@@ -7,11 +7,8 @@ import org.springframework.stereotype.Service;
 @Service
 public class CreateTableService {
 
-
     @Autowired
     CreateTableMapper createTableMapper;
 
     public int CreateTable(String tableName) {return createTableMapper.createNewTable(tableName);}
-
-
 }
