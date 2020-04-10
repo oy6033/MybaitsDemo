@@ -10,5 +10,8 @@ public class CreateTableService {
     @Autowired
     CreateTableMapper createTableMapper;
 
+
+    public int DropTable(String tableName) {return createTableMapper.dropTable(tableName);}
+
     public int CreateTable(String tableName) {return createTableMapper.createNewTable(tableName);}
 }

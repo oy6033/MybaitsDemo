@@ -11,4 +11,6 @@ public interface CreateTableMapper {
 
     int createNewTable(@Param("tableName")String tableName);
 
+    int dropTable(@Param("tableName")String tableName);
+
 }

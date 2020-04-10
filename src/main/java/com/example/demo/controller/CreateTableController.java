@@ -14,10 +14,13 @@ public class CreateTableController {
 
     @Autowired
     private CreateTableService createTableService;
-    @RequestMapping("table/{tableName}")
+    @RequestMapping("createtable/{tableName}")
     public int CreateTable(@PathVariable String tableName){
         return createTableService.CreateTable(tableName);
     }
-
+    @RequestMapping("droptable/{tableName}")
+    public int DropTable(@PathVariable String tableName){
+        return createTableService.DropTable(tableName);
+    }
 
 }
