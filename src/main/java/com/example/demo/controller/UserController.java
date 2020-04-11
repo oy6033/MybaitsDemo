@@ -16,10 +16,8 @@ public class UserController {
     @Autowired
     private UserService userService;
 
-
     @RequestMapping("getUser/{id}")
     public String GetUser(@PathVariable String id){ return userService.Sel(id).toString();}
-
 
     @RequestMapping("getCount")
     public int GetCount(){ return userService.Count(); }

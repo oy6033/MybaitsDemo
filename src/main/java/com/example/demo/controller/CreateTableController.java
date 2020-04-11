@@ -11,7 +11,6 @@ import org.springframework.web.bind.annotation.RestController;
 @RequestMapping("/create")
 public class CreateTableController {
 
-
     @Autowired
     private CreateTableService createTableService;
     @RequestMapping("createtable/{tableName}")
